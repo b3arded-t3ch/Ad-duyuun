@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{% block title %} Ad-duyuun {% endblock %}</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<h1>Ad-duyuun</h1>
+				<ul>
+					<li><a href="{{ url_for ('index') }}">Home</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			{% block content %}{% endblock %}
+		</main>
+		<footer>
+			<p>&copy; 2024 Ad-duyuun. All rights reserved.</p>
+		</footer>
+	</body>
+</html>
